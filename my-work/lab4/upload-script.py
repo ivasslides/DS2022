@@ -37,25 +37,5 @@ upload(file, bucket, object)
 presigned_url = generate_presigned_url(bucket, object, expires_in)
 print(f"Presigned URL: {presigned_url}")
 
-# def main():
-#     # URL of the GIF file to download
-#     file_url = 'https://images.boats.com/resize/wp/2/files/2016/04/Sailing2012_M0829.jpg'  # Replace with a valid GIF URL
-#     local_filename = 'racing-boats.jpg'
-    
-#     # S3 bucket details
-#     bucket = 'ds2022-fbv2sc'
-#     object = 'project/racing-boats.jpg'  # S3 object key (file path in bucket)
-#     expires_in = 604800  # 1 week in seconds (7 * 24 * 60 * 60)
+# presigned url =  https://ds2022-fbv2sc.s3.amazonaws.com/project/racing-boats.jpg?AWSAccessKeyId=AKIA3FRRI2YYVVVRXV7G&Signature=FKqHtO7pBPUL9izsraBs9LLE6xE%3D&Expires=1728481257 
 
-#     # Download the file
-#     file = download_file(file_url)
-
-#     # Upload the file to S3
-#     upload_to_s3(file, bucket, object)
-
-#     # Generate a presigned URL
-#     presigned_url = generate_presigned_url(bucket, object, expires_in)
-#     print(f"Presigned URL: {presigned_url}")
-
-# if __name__ == "__main__":
-#     main()
